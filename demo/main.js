@@ -19,7 +19,6 @@ function updateMorph() {
   let letiants = Az.Morph(document.getElementById("word").value, {
     typos: 0,
   });
-  console.log(letiants);
   if (0 < letiants.length && letiants.length < 6) {
     let declination = document.querySelector(".selected").value;
     for (let i = 0; i < letiants.length; i++) {

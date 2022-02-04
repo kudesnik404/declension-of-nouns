@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Declination Check</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="../favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="../src/az.js"></script>
+    <script src="../src/az.dawg.js"></script>
+    <script src="../src/az.morph.js"></script>
+    <script src="../src/az.tokens.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Склонение существительных</h2>
+      <h3>by kudesnik</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>Шаг 1: <small>Введите ваше слово</small></td>
+            <td>
+              <input id="word" type="text" placeholder="Ваше слово" value="" />
+            </td>
+          </tr>
+          <tr>
+            <td>Шаг 2: <small>Выберете склонение</small></td>
+            <td>
+              <button value="им" class="selected">И</button>
+              <button value="рд">Р</button>
+              <button value="дт">Д</button>
+              <button value="вн">В</button>
+              <button value="тв">Т</button>
+              <button value="пр">П</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Шаг 3: <small>Внимайте</small></td>
+            <td><div id="morphResults"></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
